@@ -40,7 +40,7 @@ urlpatterns = [
     path('friends/', include('backend.followers.urls')),
     path('groups/', include('backend.community.urls')),
     path('api/v2/', include('backend.api.v2.urls')),
-    path('', include("backend.pages.urls")),
+    path('', include('backend.pages.urls')),
     path(
         'google1ca7c2f55e09214b.html/',
         lambda r: HttpResponse(
